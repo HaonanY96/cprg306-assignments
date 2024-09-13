@@ -5,7 +5,7 @@ export default function StudentInfo() {
     <main>
       <h1>Haonan Ye</h1>
       <Link href="https://github.com/HaonanY96/cprg306-assignments">
-        Haonan's Github
+        https://github.com/HaonanY96/cprg306-assignments
       </Link>
     </main>
   );
