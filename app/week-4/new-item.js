@@ -17,27 +17,20 @@ export function NewItem() {
   };
 
   return (
-    <div class="flex flex-row bg-white gap-4 m-4 items-center">
-      <p className="text-lg font-bold">{quantity}</p>
-
-      <div class="flex-1">
+    <div class="flex justify-center items-center">
+      <div class="grid grid-cols-3 gap-4 m-4 items-center bg-white">
+        <p className="text-lg font-bold  text-center">{quantity}</p>
         <button
           onClick={decrement}
           disabled={quantity <= 1}
-          class={`${
-            quantity <= 1 ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-700"
-          } text-white font-bold p-4 rounded-lg transition`}
+          class="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-center text-white font-bold p-4 h-10 rounded-lg"
         >
           -
         </button>
-      </div>
-      <div class="flex-1">
         <button
           onClick={increment}
           disabled={quantity >= 20}
-          className={`${
-            quantity >= 20 ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-700"
-          } text-white font-bold p-4 rounded-lg transition`}
+          class="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-center text-white font-bold p-4 h-10 rounded-lg"
         >
           +
         </button>
