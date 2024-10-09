@@ -17,20 +17,20 @@ export function NewItem() {
   };
 
   return (
-    <div class="flex justify-center items-center">
-      <div class="grid grid-cols-3 gap-4 m-4 items-center bg-white">
+    <div className="flex justify-center items-center">
+      <div className="grid grid-cols-3 gap-4 m-4 items-center bg-white">
         <p className="text-lg font-bold  text-center">{quantity}</p>
         <button
           onClick={decrement}
           disabled={quantity <= 1}
-          class="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-center text-white font-bold p-4 h-10 rounded-lg"
+          className="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-lg text-justify text-white font-bold p-4 h-10 rounded-lg"
         >
           -
         </button>
         <button
           onClick={increment}
           disabled={quantity >= 20}
-          class="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-center text-white font-bold p-4 h-10 rounded-lg"
+          className="bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-200 active:bg-blue-200 disabled:bg-gray-400 text-lg text-justify text-white font-bold p-4 h-10 rounded-lg"
         >
           +
         </button>
