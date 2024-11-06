@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Buddy",
+        "age": 6
+    },
+    {
+        "id": 2,
+        "name": "Molly",
+        "age": 3
+    },
+    {
+        "id": 3,
+        "name": "Max",
+        "age": 5
+    },
+    {
+        "id": 4,
+        "name": "Lucy",
+        "age": 4
+    },
+    {
+        "id": 5,
+        "name": "Daisy",
+        "age": 2
+    },
+    {
+        "id": 6,
+        "name": "Bailey",
+        "age": 1
+    }
+
+]
