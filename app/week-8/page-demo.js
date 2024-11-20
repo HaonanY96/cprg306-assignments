@@ -18,8 +18,8 @@ export default function Page() {
 
   const getBreeds = async () => {
     const response = await fetch("https://dog.ceo/api/breeds/list/all");
-    const data = await response.json();
-    const message = data.message;
+    const data = await response.json(); // data is an object with a message property
+    const message = data.message; // message is an object with breed names as keys
     const breeds = Object.keys(message); // Object.keys returns an array of keys which are the breed names
     setBreeds(breeds);
   };

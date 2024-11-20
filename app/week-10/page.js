@@ -12,7 +12,7 @@ export default function Page() {
 
   async function handleSignIn() {
     await gitHubSignIn();
-    router.push("/week-9/shopping-list");
+    router.push("/week-10/shopping-list");
   }
 
   async function handleSignOut() {
@@ -21,7 +21,7 @@ export default function Page() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">Week 9</h1>
+      <h1 className="text-3xl font-bold mb-4">Week 10</h1>
       {user ? (
         <div>
           <p className="mb-4">
@@ -31,7 +31,10 @@ export default function Page() {
             Logout
           </button>
           <div>
-            <Link href="/week-9/shopping-list" className="hover:underline mb-4">
+            <Link
+              href="/week-10/shopping-list"
+              className="hover:underline mb-4"
+            >
               Continue to your Shopping List
             </Link>
           </div>
